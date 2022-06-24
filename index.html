@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kurs</title>
+</head>
+<body>
+    <div id="container">
+         
+        <div id="kalkulator">
+        
+        
+            <form oninput="bmi.value = parseInt(masa.value)/((parseInt(wzrost.value)/100)^2)">
+                <fieldset>
+                    <legend class="kalkulator">kalkulator bmi</legend>
+                    
+                    <label class="tytul_input" for="masa">Masa ciała w kg</label>
+                    <br>
+                    
+                    <input  name="masa" id="masa" maxlength="300" autofocus>  
+                    <br>
+        
+                    <label class="tytul_input" for="wzrost">Wzrost w cm    
+                    </label>
+                    <br>
+                    <input  name="wzrost" id="wzrost" maxlength="250">
+                    <br>
+                        
+                    <p class="twoje_bmi_wynosi">Twoje BMI wynosi:   
+                    </p>
+                    
+                    <output id="bmi"> </output>
+    
+                </fieldset>
+           
+            </form>
+        
+        </div>
+        
+        <div id="interpretacja">
+
+            <table class="tb_1">
+                <thead>
+                    <th>bmi</th>
+                    <th>interpretacja</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;16,0</td>
+                        <td>wygłodzenie</td>
+                    </tr>
+
+                    <tr>
+                        <td>16,0 - 16,9</td>
+                        <td>wychudzenie</td>
+                    </tr>
+
+                    <tr>
+                        <td>17,0 - 18,5</td>
+                        <td>niedowaga</td>
+                    </tr>
+
+                    <tr>
+                        <td>18,5 - 24,9</td>
+                        <td>waga prawidłowa</td>
+                    </tr>
+
+                    <tr>
+                        <td>25,0 - 29,9</td>
+                        <td>nadwaga</td>
+                    </tr>
+
+                    <tr>
+                        <td>30,0 - 34,9</td>
+                        <td>otyłość I stopnia</td>
+                    </tr>
+
+                    <tr>
+                        <td>35 - 39,9</td>
+                        <td>otyłość II stopnia</td>
+                    </tr>
+
+                    <tr>
+                        <td>&ge;40</td>
+                        <td>otyłość III stopnia</td>
+                    </tr>
+
+                </tbody>
+
+                </thead>
+            </table>
+        
+        </div>
+    
+        <script src="js/scripts.js"></script>
+</body>
+</html>

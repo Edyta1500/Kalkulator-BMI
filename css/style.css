@@ -1,0 +1,126 @@
+html{
+    
+    font-size: 10px;
+
+}
+
+body {
+    
+    height: 80vh;
+    background: url(../assets/img/watercolor.png);
+    font-family:'Courier New', Courier, monospace;
+
+}
+#container {
+
+    margin: 5% auto;
+
+}
+
+#kalkulator {
+   
+    background-color: #f2f2f2 ;
+    width: 60%; 
+    
+    padding: 5%;
+    box-shadow: 1px 5px 20px #F2CED5;
+    border-radius: 5px;
+    margin: 5% auto;
+}
+
+#interpretacja{
+    width: 60%; 
+    
+    margin: 0% auto;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.kalkulator{
+   
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-radius: 3px;
+    border-style: groove;
+}
+
+.tytul_input{
+
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+.twoje_bmi_wynosi{
+
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.tb_1{
+
+
+}
+
+
+input [type="text"]{
+    width:50%;    
+    color: #F291C7;
+    border: 1px  groove #F291C7 ;
+    border-radius: 3px;
+    font-size: 4rem;
+    padding: 5px;
+}
+
+output#bmi {
+  
+    color:#F291C7;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    
+}
+
+@media screen and (min-with: 650px) {
+    #kalkulator {
+      
+        max-width: 700px; 
+        
+    }
+    
+    input [type="text"]{
+
+        width: 70%; 
+        font-size: 4rem;
+        
+    }
+
+    tytul_input{
+
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 4rem;
+    }
+    
+
+    
+   
+    /* legend{
+        font-size: 4rem;
+    }
+    input {
+        font-size: 4rem;
+    }
+    output{
+        font-size: 4rem;
+    } */
+}
+
+
+
+
