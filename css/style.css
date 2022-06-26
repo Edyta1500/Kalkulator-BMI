@@ -23,11 +23,11 @@ body {
 }
 
 fieldset {
-  background-color: rgba(208, 232, 243, 0.5921568627);
+  background-color: rgba(172, 225, 250, 0.3803921569);
 }
 
 legend {
-  background-color: rgba(211, 196, 165, 0.5058823529);
+  background-color: #FFF1EB;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.5rem;
@@ -51,7 +51,7 @@ input {
   font-size: 1.5rem;
   padding: 5px;
   outline: none;
-  background-color: #D4CECE;
+  background-color: #89B3C7;
   text-align: center;
 }
 
@@ -61,11 +61,11 @@ input:focus {
 }
 
 #wynik {
-  background-color: #D4CECE;
+  background-color: #89B3C7;
   width: 30%;
   height: 30px;
   margin: auto;
-  border: 2px groove #D4CECE;
+  border: 2px groove #89B3C7;
   text-align: center;
   padding-top: 5px;
   color: #28353B;
@@ -84,13 +84,13 @@ table {
 }
 
 thead th {
-  background-color: rgba(211, 196, 165, 0.5058823529);
-  border: 2px groove #D4CECE;
+  background-color: #FFF1EB;
+  border: 2px groove #89B3C7;
 }
 
 table, tr, td {
   border-collapse: collapse;
-  background-color: rgba(208, 232, 243, 0.5921568627);
+  background-color: rgba(172, 225, 250, 0.3803921569);
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -102,12 +102,12 @@ table, tr, td {
   width: 100%;
   border-width: 1px;
   border-style: groove;
-  border-color: #D4CECE;
+  border-color: #89B3C7;
   border-image: initial;
 }
 
 .naglowek_tabeli {
-  background-color: #D4CECE;
+  background-color: #89B3C7;
 }
 
 th {
