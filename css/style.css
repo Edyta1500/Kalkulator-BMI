@@ -1,32 +1,33 @@
-@charset "UTF-8";
 html {
   font-size: 10px;
 }
 
 body {
   max-height: 80vh;
-  background: rgba(45, 75, 115, 0.567) fixed center/cover;
+  background: #D4CECE fixed center/cover;
   font-family: "Poppins", sans-serif;
 }
 
 #container {
   width: 100vw;
   margin: 1% auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #kalkulator, #interpretacja {
-  background: fixed rgba(153, 180, 191, 0.5647058824) center/cover;
+  background: fixed rgba(108, 125, 81, 0.478) center/cover;
   max-width: 300px;
   padding: 2%;
-  box-shadow: 10px 10px 20px #253C59;
+  box-shadow: 10px 10px 20px #A1957D;
   border-radius: 5px;
   margin: 2% auto;
 }
 
+fieldset {
+  background-color: rgba(208, 232, 243, 0.5921568627);
+}
+
 legend {
+  background-color: rgba(211, 196, 165, 0.5058823529);
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.5rem;
@@ -42,17 +43,54 @@ legend {
   margin: 3px;
 }
 
+input {
+  width: 70%;
+  color: #D4CECE;
+  border: 1px groove;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  padding: 5px;
+  outline: none;
+  background-color: #D4CECE;
+  text-align: center;
+}
+
+input:focus {
+  background-color: rgba(108, 125, 81, 0.478);
+  border: 1px ridge;
+}
+
+#wynik {
+  background-color: #D4CECE;
+  width: 30%;
+  height: 30px;
+  margin: auto;
+  border: 2px groove #D4CECE;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.81);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .twoje_bmi_wynosi {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.5rem;
   font-weight: 600;
-  display: inline-block;
 }
 
-table, tr, td, th {
-  border-bottom: 1px groove;
+table {
+  border: 1px groove;
+}
+
+thead th {
+  background-color: rgba(211, 196, 165, 0.5058823529);
+  border: 2px groove #D4CECE;
+}
+
+table, tr, td {
   border-collapse: collapse;
-  background-color: #99B4BF;
+  background-color: rgba(208, 232, 243, 0.5921568627);
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -64,8 +102,12 @@ table, tr, td, th {
   width: 100%;
   border-width: 1px;
   border-style: groove;
-  border-color: rgb(192, 192, 192);
+  border-color: #D4CECE;
   border-image: initial;
+}
+
+.naglowek_tabeli {
+  background-color: #D4CECE;
 }
 
 th {
@@ -84,32 +126,13 @@ td {
   padding-left: 10px;
 }
 
-input {
-  background-color: rgba(191, 141, 48, 0.5);
-  width: 70%;
-  color: #253C59;
-  border: 1px groove;
-  border-radius: 3px;
-  font-size: 1.5rem;
-  padding: 5px;
-  outline: none;
-  background-color: #99B4BF;
-  text-align: center;
-}
-
-input:focus {
-  background-color: #99B4BF;
-  border: 1px ridge;
-}
-
-output#bmi {
-  color: #253C59;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-}
-
 @media screen and (min-with: 650px) {
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #kalkulator #interpretacja {
     display: inline-block;
   }
@@ -128,14 +151,6 @@ output#bmi {
   .tb_1, th {
     font-size: 4rem;
   }
-
-  /* Color Theme Swatches in Hex
-  .Podróże-1-hex { color: #2D4B73; }
-  .Podróże-2-hex { color: #253C59; }
-  .Podróże-3-hex { color: #99B4BF; }
-  .Podróże-4-hex { color: #D9B70D; }
-  .Podróże-5-hex { color: #BF8D30; }
-  */
 }
 
 /*# sourceMappingURL=style.css.map */

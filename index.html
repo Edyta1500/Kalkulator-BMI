@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta  name="author" content="Edyta Dudek">
     <meta name="Keywords" content="kalkulator BMI">
-    <meta name="Description" content="Obliczanie BMI pomaga ocenić swoją masę ciała oraz czy jest ona prawidłowa w stosunku do wzrostu">
+    <meta name="Description" content="Obliczanie BMI pomaga ocenić swoją masę ciała oraz ocenić czy jest ona prawidłowa w stosunku do wzrostu">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
                 
                 <fieldset>
                    
-                    <legend class="kalkulator">kalkulator bmi</legend>
+                    <legend class="kalkulator"><strong>kalkulator bmi</strong></legend>
                     
                     <label class="tytul_input" for="masa">Masa ciała </label>
                     <br>
@@ -44,8 +44,12 @@
                     <p class="twoje_bmi_wynosi">Twoje BMI wynosi:   
                     </p>
                     
-                    <output id="bmi"> </output>
-    
+                    <div id="wynik">
+                    
+                        <output id="bmi"> </output>
+
+                    </div>
+                    
                 </fieldset>
            
             </form>
@@ -66,7 +70,8 @@
                 <tbody>
                     <tr>
                         <td>&lt;16,0</td>
-                        <td class="interp">wygłodzenie</td>
+                        <td class="interp">wygłodzeni</td>
+                        
                     </tr>
 
                     <tr>
