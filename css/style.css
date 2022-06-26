@@ -3,8 +3,8 @@ html {
 }
 
 body {
+  background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%) fixed center/cover;
   max-height: 80vh;
-  background: #D4CECE fixed center/cover;
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 #kalkulator, #interpretacja {
-  background: fixed rgba(108, 125, 81, 0.478) center/cover;
+  background: fixed #9BCAE0 center/cover;
   max-width: 300px;
   padding: 2%;
   box-shadow: 10px 10px 20px #A1957D;
@@ -37,7 +37,7 @@ legend {
 }
 
 .tytul_input {
-  color: rgba(0, 0, 0, 0.8);
+  color: #28353B;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 3px;
@@ -45,7 +45,7 @@ legend {
 
 input {
   width: 70%;
-  color: #D4CECE;
+  color: #28353B;
   border: 1px groove;
   border-radius: 3px;
   font-size: 1.5rem;
@@ -56,7 +56,7 @@ input {
 }
 
 input:focus {
-  background-color: rgba(108, 125, 81, 0.478);
+  background-color: #9BCAE0;
   border: 1px ridge;
 }
 
@@ -68,13 +68,13 @@ input:focus {
   border: 2px groove #D4CECE;
   text-align: center;
   padding-top: 5px;
-  color: rgba(0, 0, 0, 0.81);
+  color: #28353B;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .twoje_bmi_wynosi {
-  color: rgba(0, 0, 0, 0.8);
+  color: #28353B;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -95,7 +95,7 @@ table, tr, td {
   padding: 0px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #28353B;
 }
 
 .tb_1 {
@@ -114,7 +114,7 @@ th {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: #28353B;
 }
 
 td {
@@ -144,7 +144,7 @@ td {
   }
 
   .tytul_input {
-    color: rgba(0, 0, 0, 0.7);
+    color: #28353B;
     font-size: 4rem;
   }
 

@@ -1,11 +1,11 @@
-$bg-body-color: #D4CECE;
-$bg-calkulator-color: rgba(108, 125, 81, 0.478);
+$bg-calkulator-color: #9BCAE0;
 $bg-tabela-color:#d0e8f397;
 $bg-naglowki-color:#d3c4a581;
 $bg-input-color: #D4CECE;
 $bg-wynik-color:rgba(109, 188, 220, 0.5);
 $shadow-color:#A1957D;
 $wynik-color: rgba(0, 0, 0, 0.7);
+$font-color:#28353B;
 
 html{
     
@@ -13,9 +13,8 @@ html{
 }
 
 body {
-    
+    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%) fixed center/cover;
     max-height: 80vh;
-    background: $bg-body-color fixed center/cover;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -52,7 +51,7 @@ legend{
 
 .tytul_input{
 
-    color: rgba(0, 0, 0, 0.8);
+    color: $font-color;
     font-size: 1.5rem;
     font-weight: 600;
     margin: 3px;
@@ -60,7 +59,7 @@ legend{
 input  {
    
     width: 70%;    
-    color: $bg-body-color;
+    color: $font-color;
     border: 1px  groove;
     border-radius: 3px;
     font-size: 1.5rem;
@@ -83,7 +82,7 @@ input:focus{
     border: 2px groove $bg-input-color ;
     text-align: center;
     padding-top: 5px;
-    color:rgba(0, 0, 0, 0.81);
+    color:$font-color;
     font-size: 2rem;
     font-weight: bold;
    }
@@ -91,7 +90,7 @@ input:focus{
 
 .twoje_bmi_wynosi{
 
-    color: rgba(0, 0, 0, 0.8);
+    color: $font-color;
     font-size: 1.5rem;
     font-weight: 600;
     
@@ -117,7 +116,7 @@ table, tr, td {
     padding: 0px;
     text-align: center;
     font-size: 1.5rem;   
-    color:rgba(0, 0, 0, 0.8) 
+    color:$font-color;
 }
 
 .tb_1{
@@ -136,7 +135,7 @@ th{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.8);   
+    color:$font-color;   
 }
 
 td {
@@ -171,7 +170,7 @@ td {
 
     .tytul_input{
 
-        color: rgba(0, 0, 0, 0.7);
+        color: $font-color;
         font-size: 4rem;
     }
     .tb_1, th{
