@@ -3,118 +3,123 @@ html {
 }
 
 body {
-  background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%) fixed center/cover;
+  background: linear-gradient(0deg, #99B4BF 0%, #2D4B73 100%) fixed center/cover;
   max-height: 80vh;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 #container {
-  width: 100vw;
-  margin: 1% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
 #kalkulator, #interpretacja {
-  background: fixed #9BCAE0 center/cover;
-  max-width: 300px;
-  padding: 2%;
-  box-shadow: 10px 10px 20px #A1957D;
+  background: fixed rgba(37, 60, 89, 0.6470588235) center/cover;
+  width: 900vw;
+  max-width: 350px;
+  padding: 7%;
+  box-shadow: 0px 0px 20px 0px #000;
   border-radius: 5px;
-  margin: 2% auto;
+  margin: 8% auto;
+}
+
+.panel {
+  background-color: #253c59;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 15px 0px #000;
 }
 
 fieldset {
-  background-color: rgba(172, 225, 250, 0.3803921569);
+  border: none;
 }
 
 legend {
-  background-color: #FFF1EB;
+  background-color: #9f772b;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 1.5rem;
-  font-weight: 800;
-  border-radius: 3px;
-  border-style: groove;
+  font-size: 2rem;
+  border: 1px groove;
 }
 
 .tytul_input {
-  color: #28353B;
-  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
   font-weight: 600;
   margin: 3px;
 }
 
 input {
-  width: 70%;
-  color: #28353B;
-  border: 1px groove;
+  width: 90%;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1.5px outset rgba(48, 98, 122, 0.4862745098);
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 5px;
   outline: none;
-  background-color: #89B3C7;
+  background-color: #253C59;
   text-align: center;
+}
+
+#masa::placeholder, #wzrost::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 input:focus {
-  background-color: #9BCAE0;
-  border: 1px ridge;
+  font-weight: 700;
+  background-color: rgb(33, 55, 83);
+  border: 1px inset rgba(48, 98, 122, 0.4862745098);
 }
 
 #wynik {
-  background-color: #89B3C7;
-  width: 30%;
+  width: 80%;
   height: 30px;
   margin: auto;
-  border: 2px groove #89B3C7;
+  border: 2px groove #9f772b;
+  border-radius: 5px;
   text-align: center;
   padding-top: 5px;
-  color: #28353B;
+  color: #9f772b;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .twoje_bmi_wynosi {
-  color: #28353B;
-  font-size: 1.5rem;
+  border-radius: 5px;
+  color: #9f772b;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 table {
-  border: 1px groove;
+  width: 100%;
 }
 
 thead th {
-  background-color: #FFF1EB;
-  border: 2px groove #89B3C7;
+  background-color: #9f772b;
+  border: 2px groove #253C59;
 }
 
 table, tr, td {
   border-collapse: collapse;
-  background-color: rgba(172, 225, 250, 0.3803921569);
   margin: 0px;
   padding: 0px;
   text-align: center;
-  font-size: 1.5rem;
-  color: #28353B;
-}
-
-.tb_1 {
-  width: 100%;
-  border-width: 1px;
-  border-style: groove;
-  border-color: #89B3C7;
-  border-image: initial;
-}
-
-.naglowek_tabeli {
-  background-color: #89B3C7;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 th {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
-  color: #28353B;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 td {
@@ -124,33 +129,6 @@ td {
 .interp {
   text-align: left;
   padding-left: 10px;
-}
-
-@media screen and (min-with: 650px) {
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #kalkulator #interpretacja {
-    display: inline-block;
-  }
-
-  input {
-    width: 4rem;
-    font-size: 4rem;
-    max-width: 30%;
-  }
-
-  .tytul_input {
-    color: #28353B;
-    font-size: 4rem;
-  }
-
-  .tb_1, th {
-    font-size: 4rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

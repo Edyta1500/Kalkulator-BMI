@@ -1,11 +1,13 @@
-$bg-calkulator-color: #9BCAE0;
-$bg-tabela-color:#ace1fa61;
-$bg-naglowki-color:#FFF1EB;
-$bg-input-color: #89B3C7;
+
+$bg-body-color:#2D4B73;
+$bg-calkulator-color: #253c59a5;
+$bg-panel-color:#253c59;
+$bg-naglowek-pola:#9f772b;
+$bg-input-color: #253C59;
+$bg-input-focus-color:rgba(109, 188, 220, 0.5);
 $bg-wynik-color:rgba(109, 188, 220, 0.5);
-$shadow-color:#A1957D;
-$wynik-color: rgba(0, 0, 0, 0.7);
-$font-color:#28353B;
+$shadow-color:#000;
+$font-color:rgba(0, 0, 0, 0.8);
 
 html{
     
@@ -13,133 +15,149 @@ html{
 }
 
 body {
-    background: linear-gradient(0deg, #fff1eb 0%, #ace0f9 100%) fixed center/cover;
+   
+    background: linear-gradient(0deg, #99B4BF 0%, #2D4B73 100%) fixed center/cover;
     max-height: 80vh;
     font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
 #container {
-
-    width: 100vw;
-    margin: 1% auto;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
     
 }
 
 #kalkulator, #interpretacja {
    
     background: fixed $bg-calkulator-color  center/cover;
-    max-width: 300px; 
-    padding: 2%;
-    box-shadow: 10px 10px 20px $shadow-color;
+    width: 900vw;
+    max-width: 350px; 
+    padding: 7%;
+    box-shadow: 0px 0px 20px 0px $shadow-color;
     border-radius: 5px;
-    margin: 2% auto;  
+    margin: 8% auto;  
+       
+}
+
+.panel{
+
+    background-color: $bg-panel-color;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 15px 0px $shadow-color;
+    
    
+
 }
 fieldset{
-    background-color: $bg-tabela-color;
+
+    border:none; 
 }
 
 legend{
-    background-color: $bg-naglowki-color;
+
+    background-color: $bg-naglowek-pola;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 1.5rem;
-    font-weight: 800;
-    border-radius: 3px;
-    border-style: groove;
+    font-size: 2rem;
+    border:1px groove;
+
 }
 
 .tytul_input{
 
     color: $font-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 3px;
 }
+
 input  {
    
-    width: 70%;    
+    width: 90%;    
     color: $font-color;
-    border: 1px  groove;
+    border: 1.5px  outset #30627a7c;
     border-radius: 3px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 5px;
     outline: none;
     background-color: $bg-input-color;
     text-align: center;
 }
-input:focus{
-    
-    background-color: $bg-calkulator-color;
-    border: 1px  ridge;
+#masa::placeholder, #wzrost::placeholder{
+
+    color:$font-color;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif ;
 }
+
+input:focus{
+    font-weight: 700;   
+    background-color:rgb(33, 55, 83);
+    border: 1px  inset #30627a7c;
+}
+
 #wynik{
 
-    background-color: $bg-input-color;
-    width: 30%;
+    width: 80%;
     height: 30px;
     margin:auto;
-    border: 2px groove $bg-input-color ;
+    border: 2px groove $bg-naglowek-pola ;
+    border-radius: 5px;
     text-align: center;
     padding-top: 5px;
-    color:$font-color;
+    color:$bg-naglowek-pola;
     font-size: 2rem;
     font-weight: bold;
-   }
-
+   
+}
 
 .twoje_bmi_wynosi{
 
-    color: $font-color;
-    font-size: 1.5rem;
+    border-radius: 5px;
+    color: $bg-naglowek-pola;
+    font-size: 2rem;
     font-weight: 600;
     
 }
-table{
-   
-    border:1px groove;
 
+table{
+    
+    width:100%; 
 }
 
  thead th{
-    background-color: $bg-naglowki-color;
+    background-color: $bg-naglowek-pola;
     border:  2px groove $bg-input-color; 
     
  }
 
 table, tr, td {
 
-    
     border-collapse: collapse;
-    background-color: $bg-tabela-color;
     margin: 0px;
     padding: 0px;
     text-align: center;
-    font-size: 1.5rem;   
+    font-size:    1.6rem;
     color:$font-color;
+   
 }
 
-.tb_1{
-    width:100%;  
-    border-width: 1px;
-    border-style: groove;
-    border-color: $bg-input-color;
-    border-image: initial;
-} 
-   
-.naglowek_tabeli{
-    
-    background-color: $bg-input-color ;
-}
 th{
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:$font-color;   
 }
 
 td {
     padding: 2px;
+    
 }
 
 .interp{
@@ -148,33 +166,33 @@ td {
     padding-left: 10px;
 }
 
-@media screen and (min-with: 650px) {
+// @media screen and (min-with: 650px) {
     
-    #container{
+//     #container{
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
     
-    #kalkulator #interpretacja {
-        display:inline-block;    
-    }
+//     #kalkulator #interpretacja {
+//         display:inline-block;    
+//     }
     
-    input{
+//     input{
 
-        width: 4rem; 
-        font-size: 4rem;
-        max-width: 30%;
-    }
+//         width: 4rem; 
+//         font-size: 4rem;
+//         max-width: 30%;
+//     }
 
-    .tytul_input{
+//     .tytul_input{
 
-        color: $font-color;
-        font-size: 4rem;
-    }
-    .tb_1, th{
-        font-size: 4rem;
+//         color: $font-color;
+//         font-size: 4rem;
+//     }
+//     .tb_1, th{
+//         font-size: 4rem;
 
-    }
-}
+//     }
+// }

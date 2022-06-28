@@ -22,7 +22,7 @@
          
         <div id="kalkulator">
         
-            <form oninput="bmi.value = parseInt(masa.value)/((parseInt(wzrost.value)/100)^2)">
+            <form class="panel" oninput="bmi.value = parseInt(masa.value)/((parseInt(wzrost.value)/100)^2)">
                 
                 <fieldset>
                    
@@ -58,7 +58,7 @@
         
         <div id="interpretacja">
 
-            <table class="tb_1">
+            <table class="panel">
                
                 <thead>
                     <tr>
@@ -67,15 +67,15 @@
                     </tr>
                 </thead>
                 
-                <tbody>
+                <tbody class="tab1">
                     <tr>
                         <td>&lt;16,0</td>
-                        <td class="interp">wygłodzeni</td>
+                        <td class="interp">wygłodzenie</td>
                         
                     </tr>
 
                     <tr>
-                        <td>16,0& - 16,9</td>
+                        <td>16,0 - 16,9</td>
                         <td class="interp">wychudzenie</td>
                     </tr>
 
